@@ -9,8 +9,10 @@ import {RegistroComponent} from './cliente/registro/registro.component';
 import {TiendaComponent} from './cliente/tienda/tienda.component';
 import {ControlPanelComponent} from './backoffice/control-panel/control-panel.component';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
+import { PerfilComponent } from './backoffice/perfil/perfil.component';
 
 export const routes: Routes = [
+  
 
   // cliente
   // localhost:4200 -> www.ejemplo.com
@@ -20,6 +22,7 @@ export const routes: Routes = [
       {path: "login", component: LoginComponent}, // -> www.ejemplo.com/login
       {path: "registro", component: RegistroComponent}, // -> www.ejemplo.com/registro
       {path: "tienda", component: TiendaComponent}, // www.ejemplo.com/tienda
+      
     ]
   },
   // backoffice
@@ -30,6 +33,7 @@ export const routes: Routes = [
 
       {path: "", redirectTo: "control-panel", pathMatch: "full"}, // -> www.ejemplo.com/app
       {path: "control-panel", component: ControlPanelComponent}, // -> www.ejemplo.com/app/control-panel
+      {path: "perfil", component: PerfilComponent},
     ]
   },
 

@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {HeaderBackofficeComponent} from '../header-backoffice/header-backoffice.component';
-import {RouterOutlet} from '@angular/router';
+import {Router, RouterOutlet} from '@angular/router';
 import {SidebarComponent} from '../sidebar/sidebar.component';
 import {SidebarStatusService} from '../../services/status/sidebar-status.service';
 
@@ -21,6 +21,7 @@ export class LayoutBackComponent implements OnInit {
 
   constructor(
     private sidebarStatusService: SidebarStatusService,
+    
   )
   {}
 
@@ -29,5 +30,7 @@ export class LayoutBackComponent implements OnInit {
       this.isActiveSidebar = valorProcedenteDelHeader;
     })
   }
+
+  
 
 }

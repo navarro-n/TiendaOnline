@@ -51,11 +51,10 @@ export class GraphicLineComponent implements OnInit {
     datasets: [{
       data: [],
       borderColor: [],
-      backgroundColor: 'rgba(0, 255, 0, 0.1)',
-      pointBackgroundColor: "green",
+      backgroundColor: [],      
       pointBorderColor: [],
       fill: true,
-      label:"Other 50%"
+      label:"Organic 44.46%"
       
       
     }]
@@ -65,8 +64,8 @@ export class GraphicLineComponent implements OnInit {
   private setChartData(): void {
     this.lineChartData.labels = ["", "", "", "", "", ""];
     this.lineChartData.datasets[0].data = [20, 40, 70, 60, 90, 20]
-    this.lineChartData.datasets[0].borderColor = "green"
-    this.lineChartData.datasets[0].backgroundColor = 'rgba(0, 255, 0, 0.1)'
+    this.lineChartData.datasets[0].borderColor = 'rgb(0, 157, 255)', 
+    this.lineChartData.datasets[0].backgroundColor = 'rgba(0, 157, 255, 0.32)'
   }
 
 }
