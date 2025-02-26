@@ -32,4 +32,7 @@ export class SidebarComponent implements OnInit {
     this.router.navigate(['/app/control-panel']); // Esto navegará a la ruta '/app/inicio'
   }
 
+  clickCerrarSesion(): void {
+    this.router.navigate(['/login']);
+  }
 }
