@@ -5,7 +5,7 @@ ver la información que se comparte y compartir información.
 También gestionar los mensajes que llegan a la plataforma y revisar los gráficos y estadisticas
 en el backoffice.
 
-Te la bienvenida y ¡Empezamos! ^^
+Te doy la bienvenida y ¡Empezamos! ^^
 
 # Características
 - Registro e inicio de sesión de los usuarios.
