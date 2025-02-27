@@ -1,3 +1,9 @@
+# Información previa
+El proyecto está en proceso.
+Surge con el objetivo de aprender, mejorar y asentar los conocimientos adquiridos hasta el momento.
+
+Dicho lo cual, te doy la bienvenida y... ¡Empezamos! ^^
+
 # Tienda Online
 Tienda Online es un proyecto desarrollado en Angular para gestionar productos y compras en línea.
 La web también cuenta con un backoffice, donde los empleados pueden interactuar con otro trabajadores,
@@ -5,26 +11,26 @@ ver la información que se comparte y compartir información.
 También gestionar los mensajes que llegan a la plataforma y revisar los gráficos y estadisticas
 en el backoffice.
 
-Te doy la bienvenida y ¡Empezamos! ^^
-
 # Características
 - Registro e inicio de sesión de los usuarios.
-- Catálogo de productos de la web y carrito.
+- Catálogo de productos de la web y carrito de compra.
 - backoffice con graficos y estadisticas, perfil del usuario donde puedes compartir informes con otros 
     usuarios y chatear.
 
 # Tecnologías usadas
-Frontend: Angular, scss, boostrap, TypeScript.
-Backend: Spring boot, Java, Postman.
-Base de Datos: Xampp.
+- Angular
+- Scss
+- Boostrap
+- TypeScript
+- ChartJS
 
 # Instalación
-1. git clone + https://github.com/navarro-n/TiendaOnline.git
+1. git clone + [respositoria TiendaOnline](https://github.com/navarro-n/TiendaOnline.git)
 2. Entrar en la carpeta del proyecto con cd TiendaOnline
 3. Instalamos las dependencias con npm install
 4. Para correr el servidor: ng serve -o y se habre directamente tu navegador con el localhost
 
-# Uso
+# Funcionalidades actuales
 - Acceder a la página e interactuar con los diferentes productos.
 - Explorar los articulos y añadir al carrito.
 - Iniciar sesión como usuario o registrarte.
