@@ -25,7 +25,7 @@ en el backoffice.
 - ChartJS
 
 # Instalación
-1. git clone + [respositoria TiendaOnline](https://github.com/navarro-n/TiendaOnline.git)
+1. git clone + https://github.com/navarro-n/TiendaOnline.git
 2. Entrar en la carpeta del proyecto con cd TiendaOnline
 3. Instalamos las dependencias con npm install
 4. Para correr el servidor: ng serve -o y se habre directamente tu navegador con el localhost
