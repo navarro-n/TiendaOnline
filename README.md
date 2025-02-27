@@ -1,79 +1,44 @@
- Tipografías
-  - Poppins
-  - Montserrat
-  - Roboto 
-  - Open Sans
-  - Lato
-  - Raleway
-  - Lora
+# Tienda Online
+Tienda Online es un proyecto desarrollado en Angular para gestionar productos y compras en línea.
+La web también cuenta con un backoffice, donde los empleados pueden interactuar con otro trabajadores,
+ver la información que se comparte y compartir información.
+También gestionar los mensajes que llegan a la plataforma y revisar los gráficos y estadisticas
+en el backoffice.
 
-  - Poppins + Montserrat
-  - Raleway + Montserrat (Viceversa)
-  - Open Sans + Poppins
-  - Raleway + Lora
-  - Open Sans + Roboto (Viceversa)
-  - Roboto + Montserrat
-  - Montserrat
-  - Poppins
+Te la bienvenida y ¡Empezamos! ^^
 
+# Características
+- Registro e inicio de sesión de los usuarios.
+- Catálogo de productos de la web y carrito.
+- backoffice con graficos y estadisticas, perfil del usuario donde puedes compartir informes con otros 
+    usuarios y chatear.
 
-https://hencework.com/theme/hound/rtl-light/
+# Tecnologías usadas
+Frontend: Angular, scss, boostrap, TypeScript.
+Backend: Spring boot, Java, Postman.
+Base de Datos: Xampp.
 
+# Instalación
+1. git clone + https://github.com/navarro-n/TiendaOnline.git
+2. Entrar en la carpeta del proyecto con cd TiendaOnline
+3. Instalamos las dependencias con npm install
+4. Para correr el servidor: ng serve -o y se habre directamente tu navegador con el localhost
 
-Páginas de BackOffice: 
-  - Inicio
-  - Perfil
-  - Cambiar contraseña
-  - Productos
-  - Cerrar sesión
-  - -------------
-  - Redes sociales
+# Uso
+- Acceder a la página e interactuar con los diferentes productos.
+- Explorar los articulos y añadir al carrito.
+- Iniciar sesión como usuario o registrarte.
+- Acceder a tu perfil, revisar tus notificaciones, interactuar con los diferentes usuarios.
+    También compartir información relevantes con los usuarios.
+- En el panel de inicio revisar los diferentes charts y estadísticas.
+- Revisar tu contraseña y toma el gusto de cambiarla si es necesario.
 
+Despues de revisar el proyecto tomate la libertad de crear una nueva rama.
+- git checkout -b nombre-de-tu-rama
+- Despues de realizar tus cambios haz un git commit -m "nueva función"
+- git push origin a nombre-de-tu-rama
+- Haz un pull request y charlamos sobre tus aportaciones al proyecto.
 
+Último paso, darte las gracias por el interés al proyecto y aportar con tus ideas ^^
 
-
-App settings:
-   - Segundo botón:
-     - color verde si la pantalla tiene menos de 992px
-     - letra tenga un tamaño de 10px, color blanco 
-     el texto y color del botón negro si la 
-     pantalla es menor a 576px
-
-  
-  - Tercer botón:
-    - el span no debe de aparecer si el dispositivo tiene una pantalla inferior a 576px y el icono tendrá un
-    tamaño de "larger" -> max-width
-    - si la pantalla es superior a 1200px el botón no debe de aparecer -> min-width
-
-  - Cuarto botón
-    - Tamaño de width general 200px
-    - pero cuando la pantalla sea inferior a 992px el width será de 80%
-
-  - Quinto botón
-    - El botón desaparecerá en los dispositivos que tengan un mínimo de 
-    769px y 992px y el color de fondo será naranja
-
-  - Sexto botón
-    - El botón por defecto va a tener una altura de 300px
-    - Cuando la pantalla tenga una altura inferior a 700px el botón tendrá una altura de 100px
-    - Si la pantalla tiene ua altura superior a 800px, el botón no debe de aparecer
-
-
-
-
-
-
-
-Puntos de ruptura:
-  -> Móviles muy pequeños se encuentran entre los 350px-375px de ancho -> Nosotros lo haríamos de forma manual en el css
-  -> tamaño medio de móviles -> 576px -> sm
-  -> Móviles más grandes y tablets pequeñas -> 769px -> md
-  -> Móviles (la mayoría) en landscape y tablets grandes -> 992px -> lg
-  -> Otras tablets (iPads, entre otros) y portátiles con pantallas pequeñas (13', 14') -> 1200px -> xl
-  -> Ordenadores con pantallas grandes -> 1400px -> xxl
-  -> A partir de 1400px cualquier tipo de pantalla grande
-
-
-
-npm install chart.js ng2-charts para intalar la librerias en angular
-en le main.ts se añade y se importa
+Proyecto creado por Irene Pinillos Navarro
