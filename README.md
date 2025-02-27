@@ -41,4 +41,4 @@ Despues de revisar el proyecto tomate la libertad de crear una nueva rama.
 
 Último paso, darte las gracias por el interés al proyecto y aportar con tus ideas ^^
 
-Proyecto creado por [Irene Pinillos Navarro](https://github.com/navarro-n)
+Proyecto creado por [navarro-n](https://github.com/navarro-n)
