@@ -14,6 +14,10 @@ export class HeaderClienteComponent {
   ) { }
 
   clickIniciarSesion(): void {
+    this.router.navigate(['/login']);
+  }
+
+  clickRegistrarse(): void {
     this.router.navigate(['/registro']);
   }
 

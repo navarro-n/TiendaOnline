@@ -1,10 +1,10 @@
 import {Component, OnInit} from '@angular/core';
 import {SidebarStatusService} from '../../services/status/sidebar-status.service';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-sidebar',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.scss'
 })
@@ -23,7 +23,7 @@ export class SidebarComponent implements OnInit {
       this.isActiveMenuHeader = status;
     })
   }
-
+  
   clickPerfil(): void {
     this.router.navigate(['/app/perfil']); // Esto navegará a la ruta '/app/perfil'
   }
@@ -33,6 +33,7 @@ export class SidebarComponent implements OnInit {
   }
 
   clickCerrarSesion(): void {
-    this.router.navigate(['/login']);
+    this.router.navigate(['/app/header-cliente']);
   }
+  
 }

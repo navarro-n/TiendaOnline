@@ -5,7 +5,7 @@ Surge con el objetivo de aprender, mejorar y asentar los conocimientos adquirido
 Dicho lo cual, te doy la bienvenida y... ¡Empezamos! ^^
 
 # Tienda Online
-Tienda Online es un proyecto desarrollado en Angular para gestionar productos y compras en línea.
+Es un proyecto desarrollado en Angular para gestionar productos y compras en línea.
 La web también cuenta con un backoffice, donde los empleados pueden interactuar con otro trabajadores,
 ver la información que se comparte y compartir información.
 También gestionar los mensajes que llegan a la plataforma y revisar los gráficos y estadisticas

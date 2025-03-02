@@ -12,7 +12,7 @@ export class RegistroComponent {
   constructor(
     private router: Router
   ) { }
-  clickIniciarSesion(): void {
+  clickRegistrarse(): void {
     this.router.navigate(['/app/control-panel']);
   }
 
