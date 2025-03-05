@@ -1,2 +1,5 @@
 
 <router-outlet></router-outlet>
+<footer *ngIf="!router.url?.includes('backoffice')">
+    <app-footer></app-footer>
+</footer>

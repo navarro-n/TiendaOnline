@@ -1,108 +1,73 @@
 <div class="contenedor-principal">
-    <div class="row">
-    <!-- Bloque Izquierdo -->
-<div class="col-md-3">
-    <div class="sidebar-left p-3 m-auto">
-      <div class="coworkers bg-white shadow-sm rounded-3">
-        <div class="div-coworkers avatar1 mb-3 mt-3 row d-flex align-item-center ">
-          <h5 class="col-5">Coworkers</h5>
-          <i class="bi bi-arrow-right-circle col-5 fs-5 "></i>
-        </div>
+  <div class="row">
+      <!-- Perfil del vendedor -->
+      <div class="col-md-3">
+          <div class="sidebar-left p-3 m-auto">
+              <div class="seller-profile bg-white shadow-sm rounded-3 text-center p-3">
+                <i class="bi bi-person-circle display-1"></i>
+                  <h5>Irene Navarro</h5>
+                  <p class="text-muted">Vendedor desde 2021</p>
+                  <div class="seller-stats">
+                      <p><strong>120</strong> Ventas</p>
+                      <p><strong>4.8/5</strong> Calificación</p>
+                  </div>
+                  <button class="btn btn-dark w-100 mt-2">Editar Perfil</button>
+              </div>
+          </div>
       </div>
-      
-    
-        
-    <!-- Coworkers -->
-    <div class="coworkers bg-white shadow-sm rounded-3">
-        <div class="avatar1 mb-3 mt-3">
-            <img class="px-4" src="avatar1.png" alt="Sara">
-            <span class="p-3">Sara Pajarín</span>
-        </div>
-    </div>
 
-    <div class="coworkers bg-white shadow-sm rounded-3">
-        <div class="avatar1 mb-3 mt-3">
-            <img class="px-4" src="avatar1.png" alt="David">
-            <span class="p-3">David Rodriguez</span>
-        </div>
-    </div>
-
-    <div class="coworkers bg-white shadow-sm rounded-3">
-        <div class="avatar1 mb-3 mt-3">
-            <img class="px-4" src="avatar1.png" alt="Yovanny">
-            <span class="p-3">Yovanny Nuñez</span>
-        </div>
-    </div>
-    
-    <div class="coworkers bg-white shadow-sm rounded-3">
-        <div class="avatar1 mb-3 mt-3">
-            <img class="px-4" src="avatar1.png" alt="Gabriel">
-            <span class="p-3">Gabriel Ferreira</span>
-        </div>
-    </div>
-
-    <div class="coworkers bg-white shadow-sm rounded-3">
-        <div class="avatar1 mb-3 mt-3">
-            <img class="px-4" src="avatar1.png" alt="Michael">
-            <span class="p-3">Michael Vahos</span>
-        </div>
-    </div>
-    </div>
-  </div>
-  
-  
-      <!-- Contenido Principal -->
+      <!-- Productos venta -->
       <div class="col-md-6">
-        <div class="main-content p-3">
-          <div class="post-box">
-            <input type="text" class="form-control" placeholder="Compara tu trabajo">
-            <div class="post-actions mt-2">
-              <button class="btn btn-light bi bi-calendar-event mx-2"> Event</button>
-              <button class="btn btn-light bi bi-image mx-2"> Photo</button>
-              <button class="btn btn-light bi bi-play-btn mx-2"> Video</button>
-              <button class="btn btn-light bi bi-emoji-smile mx-2"> Feeling</button>
-            </div>
-          </div>
-  
-          <div class="feed mt-3 bg-white shadow-sm rounded-3 ">
-            <div class="mx-5 my-5 py-3">
-              <div>
-                <img src="avatar1.png" alt="Antonio">
-                <div>
-                  <strong>Antonio</strong> <br>
-                  <small>13:06 h</small>
-                </div>
+          <div class="main-content p-3">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                  <h4>Mis Productos</h4>
+                  
+                  <button class="btn btn-dark">
+                    <i class="bi bi-box-seam"></i> Agregar Producto</button>
               </div>
-              <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur.</p>
-              <img src="datos.png" class="post-image w-100 rounded mt-2" alt="Post Image">
-            </div>
-          </div>
-        </div>
-      </div>
-  
-      <!-- Sidebar Derecho -->
-        <div class="col-md-3">
-          <div class="social bg-white shadow-sm rounded-3 mx-3">
-            <div class="div-coworkers avatar1 mb-3 mt-3 row d-flex align-item-center m-auto">
-              <h5 class="col-5">Social</h5>
-              <i class="bi bi-app-indicator col-5 fs-5 "></i>
-            </div>
-          </div>
 
-          <div class="container-social bg-white shadow-sm rounded-3 p-2 mx-3">
-            <div class="avatar1 mb-3 mt-3">
-              <p>Notificaciones</p>  
-              <img class="px-4" src="avatar1.png" alt="Sara">
-              <span class="p-3">Sara Pajarín: </span>
-              <div >
-                <p>Add a photo the last proyect</p>
+              <div class="row">
+                  <div class="col-md-6 mb-4">
+                      <div class="product-card bg-white shadow-sm rounded-3 p-3 text-center">
+                          <img src="producto1.jpg" class="product-img mb-2" alt="Producto">
+                          <h6>Zapatos Deportivos</h6>
+                          <p class="text-muted">$49.99</p>
+                          <button class="btn btn-outline-dark w-100">Editar</button>
+                      </div>
+                  </div>
+
+                  <div class="col-md-6 mb-4">
+                      <div class="product-card bg-white shadow-sm rounded-3 p-3 text-center">
+                          <img src="producto2.jpg" class="product-img mb-2" alt="Producto">
+                          <h6>Reloj Inteligente</h6>
+                          <p class="text-muted">$89.99</p>
+                          <button class="btn btn-outline-dark w-100">Editar</button>
+                      </div>
+                  </div>
               </div>
-              
-            </div>
-        </div>
-        
-        
-        </div>
-    </div>
+          </div>
+      </div>
+
+      <!-- Pedidos recientes -->
+      <div class="col-md-3">
+          <div class="bg-white shadow-sm rounded-3 p-3">
+              <h5>Pedidos Recientes</h5>
+              <div class="order-item d-flex align-items-center mb-3">
+                <i class="bi bi-person-circle display-6"></i>
+                  <div class="ms-3">
+                      <p class="mb-0"><strong>Sara Pajarín</strong></p>
+                      <small class="text-muted">Compró 2 productos</small>
+                  </div>
+              </div>
+
+              <div class="order-item d-flex align-items-center">
+                <i class="bi bi-person-circle display-6"></i>
+                  <div class="ms-3">
+                      <p class="mb-0"><strong>David Ruiz</strong></p>
+                      <small class="text-muted">Esperando envío</small>
+                  </div>
+              </div>
+          </div>
+      </div>
   </div>
-  
+</div>

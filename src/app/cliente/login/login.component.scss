@@ -2,28 +2,32 @@
     background: url('/login.jpg') no-repeat center center fixed;
     background-size: cover;
     background-position: center;
-
-    
-    // margin-top: -5%;
-    // margin-bottom: 20px;
-    // margin-left: 20px;
-    // margin-right: 20px;
-    min-height: calc(100vh - 56px);
-    
-    
-    
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .div-secundario {
-    
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 5px;
-    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    backdrop-filter: blur(50px);
+    padding: 20px;
 }
 
 .div-contenido {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 10px;
-    
-    
+    margin: 10px;
+}
+
+.form-control {
+    border-radius: 8px;
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: #343a40; // Color oscuro de Bootstrap
+    }
 }

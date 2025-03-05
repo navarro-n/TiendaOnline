@@ -36,7 +36,7 @@ export class HeaderBackofficeComponent {
     this.isActive = !this.isActive;
     this.sidebarStatusService.changeStatus(this.isActive);
   }
-
+  
   toggleItem(option: string) {
     if (this.isActiveItems[option]) {
       this.isActiveItems[option] = false;
@@ -48,5 +48,4 @@ export class HeaderBackofficeComponent {
       this.isActiveItems[option] = true;
     }
   }
-
 }
