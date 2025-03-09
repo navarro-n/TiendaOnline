@@ -2,10 +2,15 @@
     background: url('/login.jpg') no-repeat center center fixed;
     background-size: cover;
     background-position: center;
-    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    min-height: 92.6vh;
+    min-width: 100vw;
+    box-sizing: border-box;
+    width: 100%;
+    
 }
 
 .div-secundario {
@@ -13,10 +18,20 @@
     border-radius: 10px;
     backdrop-filter: blur(50px);
     padding: 20px;
+    
+        min-width: 450px;
+        max-width: 500px;
+        height: 450px;
+    top: -35px;
+    position: relative;
+        
+    
 }
 
 .div-contenido {
     margin: 10px;
+
+    width: 100%;
 }
 
 .form-control {
@@ -28,6 +43,8 @@ a {
     transition: color 0.3s ease;
 
     &:hover {
-        color: #343a40; // Color oscuro de Bootstrap
+        color: #343a40;
     }
 }
+
+

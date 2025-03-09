@@ -65,6 +65,7 @@ export class GraphicLine2Component {
       this.lineChartData.datasets[0].data = [10, 40, 30, 40, 30, 10],
       this.lineChartData.datasets[0].borderColor = 
       this.lineChartData.datasets[0].backgroundColor = 'rgb(0, 163, 16)'
+      this.lineChartData.datasets[0].backgroundColor = 'rgba(0, 255, 34, 0.32)'
     }
   
 
