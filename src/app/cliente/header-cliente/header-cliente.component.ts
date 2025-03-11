@@ -21,4 +21,8 @@ export class HeaderClienteComponent {
     this.router.navigate(['/registro']);
   }
 
+  clickTienda(): void {
+    this.router.navigate(['/tienda']);
+  }
+
 }

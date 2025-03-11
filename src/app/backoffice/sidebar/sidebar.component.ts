@@ -43,11 +43,11 @@ export class SidebarComponent implements OnInit {
 
   
   clickPerfil(): void {
-    this.router.navigate(['/app/perfil']); // Esto navegará a la ruta '/app/perfil'
+    this.router.navigate(['/app/perfil']);
   }
 
   clickInicio(): void {
-    this.router.navigate(['/app/control-panel']); // Esto navegará a la ruta '/app/inicio'
+    this.router.navigate(['/app/control-panel']);
   }
 
   clickCerrarSesion(): void {

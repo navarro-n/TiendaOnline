@@ -1,0 +1,43 @@
+/*
+.carrusel-imagenes {
+    height: 100vh; // Para ocupar toda la pantalla
+    object-fit: cover; // Para que la imagen se ajuste bien
+}
+    */
+
+    .contenedor-principal {
+        background-color: rgb(255, 255, 255); // Fondo general
+        min-height: 100vh;
+        padding-top: 20px;
+    }
+    .margen {
+        background-color: rgb(255, 255, 255); // Espacio lateral
+        min-height: 100vh;
+    }
+    .contenido {
+        background-color: rgb(255, 255, 255); // Área de productos
+        padding: 20px;
+        text-align: center;
+    }
+    .producto {
+        padding: 10px;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 10px;
+
+        img {
+            width: 100%;
+            max-width: 250px;
+            transition: background 0.3s ease-in-out;
+            display: block; // Para que el hover cubra solo la imagen
+        }   
+        
+        p {
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+        }
+    }
+
+    .contenedor-secundario {
+        margin-left: 140px;
+    }
