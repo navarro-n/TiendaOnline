@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   selector: 'app-perfil',
   imports: [],
   templateUrl: './perfil.component.html',
-  styleUrl: './perfil.component.scss'
+  styleUrls: ['./perfil.component.scss']
 })
 export class PerfilComponent {
   

@@ -53,5 +53,9 @@ export class SidebarComponent implements OnInit {
   clickCerrarSesion(): void {
     this.router.navigate(['/app/header-cliente']);
   }
+
+  clickProductos(): void {
+    this.router.navigate(['/app/productos']);
+  }
   
 }
