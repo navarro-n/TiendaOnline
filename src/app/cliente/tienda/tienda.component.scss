@@ -1,0 +1,49 @@
+// Estilos generales
+.categoria-h2 {
+    margin-top: 55px;
+    margin-bottom: 35px;
+}
+.card {
+    cursor: pointer;
+    transition: transform 0.3s;
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+  // Estilos de la lista de productos
+.producto-card {
+    margin-bottom: 20px;
+}
+
+  // Fondo opaco cuando se abre la vista de detalles
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+}
+
+  // Estilos para la ventana de detalles del producto
+.detalles-producto {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    max-width: 800px;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(32, 32, 32, 0.141);
+    z-index: 999;
+    border-radius: 10px;
+}
+
+.detalles-tarjeta-producto {
+    display: flex;
+    align-items: center;
+    border: none;
+}

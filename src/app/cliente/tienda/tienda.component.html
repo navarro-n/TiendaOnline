@@ -1,1 +1,44 @@
-<p>tienda works!</p>
+<div class="container">
+    
+    <!-- Mostrar productos por categoría -->
+    <div *ngFor="let categoria of categorias" class="mb-5">
+        <h3 class="categoria-h2 tex-dark text-center">{{ categoria }}</h3>
+        <div class="row">
+          <ng-container *ngFor="let producto of productos; "><!--trackBy: producto.id-->
+            <div class="col-md-4" *ngIf="producto.categoria === categoria; else noMostrar">
+              <div class="card producto-card" (click)="seleccionarProducto(producto)">
+                <img [src]="producto.imagen" class="card-img-top" [alt]="producto.nombre">
+                <div class="card-body">
+                  <h5 class="card-title">{{ producto.nombre }}</h5>
+                  <p class="card-text">{{ producto.precio | currency:'EUR' }}</p>
+                </div>
+              </div>
+            </div>
+          </ng-container>
+          <ng-template #noMostrar></ng-template>
+        </div>
+      </div>
+      
+
+    <!-- Fondo oscuro cuando un producto está seleccionado -->
+    <div class="overlay" *ngIf="selectedProduct" (click)="cerrarDetalles()"></div>
+
+    <!-- Detalles del producto seleccionado -->
+    <div *ngIf="selectedProduct" class="detalles-producto">
+      <div class="card detalles-tarjeta-producto">
+        <div class="row g-0">
+          <div class="col-md-6">
+            <img [src]="selectedProduct.imagen" class="img-fluid rounded-start" [alt]="selectedProduct.nombre">
+          </div>
+          <div class="col-md-6 d-flex flex-column justify-content-center p-4">
+            <h5 class="card-title">{{ selectedProduct.nombre }}</h5>
+            <p class="card-text">{{ selectedProduct.descripcion }}</p>
+            <p class="card-text"><strong>Precio:</strong> {{ selectedProduct.precio | currency:'EUR' }}</p>
+            <div class="d-flex gap-2">
+                <button class="btn btn-success">Añadir al carrito</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

@@ -1,90 +1,86 @@
-<!-- Carrusel de imágenes -->
-<div  class="carousel slide mb-2 shadow-sm" data-bs-ride="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="/ordenador-slide.jpg" class="d-block w-100" alt="Imagen 1">
-        </div>
-        <div class="carousel-item">
-            <img src="/movil-slide.jpg" class="d-block w-100" alt="Imagen 2">
-        </div>
-        <div class="carousel-item">
-            <img src="/dj-slide.jpg" class="d-block w-100" alt="Imagen 3">
-        </div>
-        <div class="carousel-item">
-            <img src="/fondo-slide.jpg" class="d-block w-100" alt="Imagen 3">
-        </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    </button>
-</div>
-
-
-<div class="container-fluid contenedor-principal">
-    <!--<div class="col-md-1 margen"></div>-->
-    <div class="contenedor-secundario row d-flex justify-content-center align-items-center ">
-        
-        <div class="col-md-10 contenido">        
-
-            <!--Categorias-->
-            <div class="row mt-1 mb-0 categorias">
-                <h1 class="pb-4">Categorías</h1><br>
-                <div 
-                    class="col-md-3 producto d-flex flex-column justify-content-center align-items-center shadow-sm " 
-                    *ngFor="let categoria of categorias" 
-                    (click)="clickCategorias(categorias)"> <!--.url-->
-                    <img [src]="categoria.image" alt="Producto" class="imagen">
-                    <p>{{ categoria.name}}</p>
-                </div>
-            </div><br>
-
-            <!--Top Ventas-->
-            <div class="row  mt-5 top-ventas">
-                <h2>Top Ventas</h2><br>
-                <div 
-                    class="col-md-4 producto d-flex flex-column justify-content-center align-items-center shadow-sm" 
-                    *ngFor="let producto of productos" 
-                    (click)="clickProducto(productos)"> <!--.url-->
-                    <img [src]="producto.image" alt="Producto" class="imagen">
-                    <p>{{ producto.name}}</p>
-                </div>
+<!-- Contenedor del carrusel con capa de fondo -->
+<div class="carousel-container">
+    <div id="mainCarousel" class="carousel slide mb-2 shadow-sm" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/ordenador-slide.jpg" class="d-block w-100" alt="Imagen 1">
             </div>
-
-            
+            <div class="carousel-item">
+                <img src="/movil-slide.jpg" class="d-block w-100" alt="Imagen 2">
+            </div>
+            <div class="carousel-item">
+                <img src="/dj-slide.jpg" class="d-block w-100" alt="Imagen 3">
+            </div>
+            <div class="carousel-item">
+                <img src="/fondo-slide.jpg" class="d-block w-100" alt="Imagen 4">
+            </div>
         </div>
-        <div class="col-md-1 side-space"></div>
+    </div>
+
+    <!-- Capa opaca -->
+    <div class="carousel-overlay"></div>
+
+    <!-- Texto superpuesto -->
+    <div class="texto-carrusel">
+        <h2>¡La mejor tecnologia del mercado!</h2>
     </div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- Contenedor principal -->
+<div class="container contenedor-principal">
+    <div class="row g-0 d-flex justify-content-center align-items-center">
+      <div class="col-lg-10 col-md-11 col-12 contenido">        
+  
+        <!-- Categorías -->
+        <div class="row g-0 mt-1 mb-0 categorias text-center">
+          <h1 class="pb-4">Categorías</h1>
+          <div 
+            class="col-lg-3 col-md-4 col-sm-6 col-12 producto shadow-sm" 
+            *ngFor="let categoria of categorias" 
+            (click)="clickCategorias(categorias)">
+            <img [src]="categoria.image" alt="Producto" class="imagen">
+            <p>{{ categoria.name}}</p>
+          </div>
+        </div><br>
+  
+        <!-- Top Ventas -->
+        <div class="row g-0 mt-5 top-ventas text-center">
+          <h2>Top Ventas</h2>
+          <div 
+            class="col-lg-4 col-md-6 col-sm-6 col-12 producto shadow-sm" 
+            *ngFor="let producto of productos" 
+            (click)="seleccionarProducto(producto)">
+            <img [src]="producto.imagen" alt="Producto" class="imagen">
+            <p>{{ producto.nombre}}</p>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </div>  <!-- FIN DEL CONTENEDOR PRINCIPAL -->
+  
+<!-- MODAL PARA MOSTRAR DETALLES DEL PRODUCTO -->
+<div *ngIf="selectedProduct" class="modal-overlay" (click)="cerrarDetalles()">
+    <div class="modal-content container bg-white p-4 rounded shadow" (click)="$event.stopPropagation()">
+      <div class="row align-items-center">
+        
+        <!-- Sección Izquierda: Imagen -->
+        <div class="col-md-6 text-center">
+          <img [src]="selectedProduct.imagen" alt="{{selectedProduct.nombre}}" class="img-fluid rounded">
+        </div>
+  
+        <!-- Sección Derecha: Información -->
+        <div class="col-md-6">
+          <h2 class="fw-bold">{{ selectedProduct.nombre }}</h2>
+          <p class="text-muted">{{ selectedProduct.descripcion }}</p>
+          <p class="precio fw-bold">Precio: €{{ selectedProduct.precio }}</p>
+          <button class="btn btn-success">Añadir al carrito</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  
 <!--
-<div id="homeCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-        <div *ngFor="let img of images; let i = index" class="carousel-item" [ngClass]="{'active': i === 0}">
-            <img [src]="img" class="d-block w-100 carrusel-imagenes" alt="Producto destacado">
-        </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    </button>
-</div>
+
 -->
