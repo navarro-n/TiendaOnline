@@ -1,47 +1,46 @@
-<div class="contenedor-principal">
+<div class="contenedor-principal container-fluid">
     <div class="row">
         <!-- Perfil del vendedor -->
-        <div class="col-md-3">
+        <div class="col-12 col-sm-4 col-md-3">
             <div class="sidebar-left p-3 m-auto">
-                <div class="seller-profile bg-white shadow-sm rounded-3 text-center p-3">
+                <div class="perfil-vendedor bg-white shadow-sm rounded-3 text-center p-3">
                     <i class="bi bi-person-circle display-1"></i>
                     <h5>Irene Navarro</h5>
                     <p class="text-muted">Vendedor desde 2021</p>
-                    <div class="seller-stats">
+                    <div class="detalles-vendedor d-flex justify-content-around">
                         <p><strong>120</strong> Ventas</p>
                         <p><strong>4.8/5</strong> Calificación</p>
                     </div>
-                    <button class="btn btn-dark w-100 mt-2">Editar Perfil</button>
                 </div>
             </div>
         </div>
 
         <!-- Productos venta -->
-        <div class="col-md-6">
+        <div class="col-12 col-sm-8 col-md-6">
             <div class="main-content p-3">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                     <h4>Mis Productos</h4>
-                    
                     <button class="btn btn-dark">
-                    <i class="bi bi-box-seam"></i> Agregar Producto</button>
+                        <i class="bi bi-box-seam"></i> Agregar Producto
+                    </button>
                 </div>
 
                 <div class="row">
-                    <div class="col-md-6 mb-4">
-                        <div class="product-card bg-white shadow-sm rounded-3 p-3 text-center">
-                            <img src="producto1.jpg" class="product-img mb-2" alt="Producto">
-                            <h6>Zapatos Deportivos</h6>
-                            <p class="text-muted">$49.99</p>
-                            <button class="btn btn-outline-dark w-100">Editar</button>
+                    <div class="col-12 col-lg-6 mb-4">
+                        <div class="div-producto-ficha bg-white shadow-sm rounded-3 p-3 text-center">
+                            <img src="mac.jpg" class="imagen-producto mb-2" alt="Producto">
+                            <h6>MacBook Pro</h6>
+                            <p class="text-muted">1.600€</p>
+                            <button class="btn btn-outline-dark w-100">Eliminar</button>
                         </div>
                     </div>
 
-                    <div class="col-md-6 mb-4">
-                        <div class="product-card bg-white shadow-sm rounded-3 p-3 text-center">
-                            <img src="producto2.jpg" class="product-img mb-2" alt="Producto">
-                            <h6>Reloj Inteligente</h6>
-                            <p class="text-muted">$89.99</p>
-                            <button class="btn btn-outline-dark w-100">Editar</button>
+                    <div class="col-12 col-lg-6 mb-4">
+                        <div class="div-producto-ficha bg-white shadow-sm rounded-3 p-3 text-center">
+                            <img src="tablet-producto.jpg" class="imagen-producto mb-2" alt="Producto">
+                            <h6>Tablet</h6>
+                            <p class="text-muted">600€</p>
+                            <button class="btn btn-outline-dark w-100">Eliminar</button>
                         </div>
                     </div>
                 </div>
@@ -49,17 +48,16 @@
         </div>
 
         <!-- Pedidos recientes -->
-        <div class="col-md-3">
+        <div class="col-12 col-md-3">
             <div class="bg-white shadow-sm rounded-3 p-3">
                 <h5>Pedidos Recientes</h5>
                 <div class="order-item d-flex align-items-center mb-3">
-                <i class="bi bi-person-circle display-6"></i>
+                    <i class="bi bi-person-circle display-6"></i>
                     <div class="ms-3">
                         <p class="mb-0"><strong>Sara Pajarín</strong></p>
                         <small class="text-muted">Compró 2 productos</small>
                     </div>
                 </div>
-
                 <div class="order-item d-flex align-items-center">
                     <i class="bi bi-person-circle display-6"></i>
                     <div class="ms-3">
@@ -71,4 +69,3 @@
         </div>
     </div>
 </div>
-

@@ -10,9 +10,8 @@
       <span class="position-absolute notify rounded-circle small d-flex align-items-center justify-content-center text-white">5</span>
       <app-tab-notification *ngIf="isActiveItems.isActiveNotification"></app-tab-notification>
     </div> <!-- fin-notificaciones -->
-    <div> <!-- Contenedor del menú cuadrado -->
-      <i class="bi bi-grid-3x3-gap-fill text-white fs-5"></i>
-    </div><!-- fin-menu-cuadrado -->
+
+
     <div> <!-- Contenedor de ajustes -->
       <i class="bi bi-gear-fill text-white fs-5" (click)="toggleItem('isActiveSettings')"></i>
     </div> <!-- fin-ajustes -->
@@ -35,3 +34,11 @@
 </header>
 
 <app-settings *ngIf="isActiveItems.isActiveSettings"></app-settings>
+
+
+<!--
+
+    <div>  Contenedor del menú cuadrado 
+      <i class="bi bi-grid-3x3-gap-fill text-white fs-5"></i>
+    </div> fin-menu-cuadrado 
+-->
