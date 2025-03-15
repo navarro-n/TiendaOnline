@@ -35,7 +35,7 @@
             <p class="card-text">{{ selectedProduct.descripcion }}</p>
             <p class="card-text"><strong>Precio:</strong> {{ selectedProduct.precio | currency:'EUR' }}</p>
             <div class="d-flex gap-2">
-                <button class="btn btn-success">Añadir al carrito</button>
+                <button class="btn btn-success" (click)="agregarAlCarrito(selectedProduct)">Añadir al carrito</button>
             </div>
           </div>
         </div>

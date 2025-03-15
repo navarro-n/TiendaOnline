@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { CarritoService } from '../../services/carrito.service';
 
 export interface Producto {
   id: number;
@@ -52,12 +53,20 @@ export class TiendaComponent {
 
   selectedProduct: Producto | null = null;
 
+  constructor(private carritoService: CarritoService) {}
+
   seleccionarProducto(producto: Producto) {
     this.selectedProduct = producto;
   }
 
   cerrarDetalles() {
     this.selectedProduct = null;
+  }
+
+  agregarAlCarrito(producto: any) {
+    if (this.selectedProduct) {
+      this.carritoService.agregarAlCarrito(this.selectedProduct);
+    }
   }
 
   

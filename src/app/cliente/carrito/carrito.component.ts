@@ -1,21 +1,23 @@
-import { Component, Input } from '@angular/core';
-import {Producto} from '../tienda/tienda.component';
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { CarritoService } from '../../services/carrito.service';
+import { Producto, TiendaComponent } from '../tienda/tienda.component';
 
 @Component({
   selector: 'app-carrito',
-  imports: [],
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './carrito.component.html',
   styleUrl: './carrito.component.scss'
 })
 export class CarritoComponent {
-  @Input() carrito: Producto[] = [];
+  carrito: Producto[] = [];
 
-  eliminarDelCarrito(index: number) {
-    this.carrito.splice(index, 1);
-  }
+  constructor(private carritoService: CarritoService) {}
 
-  get totalCarrito() {
-    return this.carrito.reduce((total, producto) => total + producto.precio, 0);
-  }
-
+  ngOnInit() {
+    this.carritoService.obtenerCarrito().subscribe(productos => {
+      this.carrito = productos;
+    });
+  }    
 }
