@@ -12,6 +12,8 @@ export interface UserInterface {
 
 export type LoginInterface = Pick<UserInterface, "username" | "password">
 
+export type PasswordChange = Pick<UserInterface, "username" | "password"> & {newPassword: string}
+
 
 
 // export type LoginInterface2 = Omit<UserInterface, "address" | "firstName" | "lastName" | "roleName">

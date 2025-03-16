@@ -74,7 +74,7 @@
           <h2 class="fw-bold">{{ selectedProduct.nombre }}</h2>
           <p class="text-muted">{{ selectedProduct.descripcion }}</p>
           <p class="precio fw-bold">Precio: €{{ selectedProduct.precio }}</p>
-          <button class="btn btn-success">Añadir al carrito</button>
+          <button class="btn btn-success" (click)="agregarAlCarrito(selectedProduct)">Añadir al carrito</button>
         </div>
   
       </div>

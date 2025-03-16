@@ -23,7 +23,7 @@ export const routes: Routes = [
   // localhost:4200 -> www.ejemplo.com
   {
     path: "", component: LayoutComponent, children: [ // -> www.ejemplo.com
-      {path: "home", component: HomeComponent}, // -> www.ejemplo.com
+      {path: "", component: HomeComponent}, // -> www.ejemplo.com
       {path: "login", component: LoginComponent, canActivate: [publicGuard]}, // -> www.ejemplo.com/login,
       {path: "registro", component: RegistroComponent, canActivate: [publicGuard]}, // -> www.ejemplo.com/registro
       {path: "tienda", component: TiendaComponent}, // www.ejemplo.com/tienda

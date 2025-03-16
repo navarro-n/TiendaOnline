@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CarritoService } from '../../services/carrito.service';
+import { PopupService } from '../../services/utils/popup.service';
 
 export interface Producto {
   id: number;
@@ -53,7 +54,7 @@ export class TiendaComponent {
 
   selectedProduct: Producto | null = null;
 
-  constructor(private carritoService: CarritoService) {}
+  constructor(private carritoService: CarritoService, private popUpService: PopupService) {}
 
   seleccionarProducto(producto: Producto) {
     this.selectedProduct = producto;
@@ -66,7 +67,18 @@ export class TiendaComponent {
   agregarAlCarrito(producto: any) {
     if (this.selectedProduct) {
       this.carritoService.agregarAlCarrito(this.selectedProduct);
+      this.cargando();
     }
+  }
+
+
+  cargando() {
+    this.popUpService.loader('Cargando...', 
+      'Añadiendo producto al carrito'
+    );
+    setTimeout(() => {
+      this.popUpService.close();
+    }, 1500);
   }
 
   

@@ -1,5 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { CarritoService } from '../../services/carrito.service';
+import { PopupService } from '../../services/utils/popup.service';
 
 export interface Producto {
   id: number;
@@ -29,6 +31,8 @@ export class HomeComponent {
 
   selectedProduct: Producto | null = null;
 
+  constructor(private carritoService: CarritoService, private popUpService: PopupService) {}
+
   seleccionarProducto(producto: Producto) {
     this.selectedProduct = producto;
   }
@@ -49,6 +53,21 @@ export class HomeComponent {
   clickCategorias(url: any) {
     window.location.href = '/tienda';
   }
-  
+
+  agregarAlCarrito(producto: any) {
+    if (this.selectedProduct) {
+      this.carritoService.agregarAlCarrito(this.selectedProduct);
+      this.cargando();
+    }
+  }
+
+  cargando() {
+    this.popUpService.loader('Cargando...', 
+      'Añadiendo producto al carrito'
+    );
+    setTimeout(() => {
+      this.popUpService.close();
+    }, 1500);
+  }
 
 }
